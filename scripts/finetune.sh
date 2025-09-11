@@ -2,8 +2,8 @@
 
 # You can use 2B instead of 7B
 # MODEL_NAME="Qwen/Qwen2-VL-7B-Instruct"
-# MODEL_NAME="Qwen/Qwen2-VL-2B-Instruct"
-MODEL_NAME="Qwen/Qwen2.5-VL-3B-Instruct"
+MODEL_NAME="Qwen/Qwen2-VL-2B-Instruct"
+# MODEL_NAME="Qwen/Qwen2.5-VL-3B-Instruct"
 # MODEL_NAME="Qwen/Qwen2.5-VL-7B-Instruct"
 
 GLOBAL_BATCH_SIZE=128
@@ -17,15 +17,15 @@ deepspeed src/train/train_sft.py \
     --use_liger True \
     --deepspeed scripts/zero3_offload.json \
     --model_id $MODEL_NAME \
-    --data_path /path/to/your/training/data.json \
-    --image_folder /path/to/your/image/folder \
+    --data_path qwen_finetuning_dataset.jsonl \
+    --image_folder plots \
     --remove_unused_columns False \
     --freeze_vision_tower False \
     --freeze_llm False \
     --freeze_merger False \
     --bf16 True \
     --fp16 False \
-    --disable_flash_attn2 False \
+    --disable_flash_attn2 True \
     --output_dir output/test_fft \
     --num_train_epochs 1 \
     --per_device_train_batch_size $BATCH_PER_DEVICE \
