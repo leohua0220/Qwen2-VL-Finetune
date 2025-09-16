@@ -19,9 +19,9 @@ deepspeed src/train/train_sft.py \
     --use_liger True \
     --lora_enable True \
     --use_dora False \
-    --lora_namespan_exclude "['lm_head', 'embed_tokens', 'visual']" \
+    --lora_namespan_exclude "['lm_head', 'embed_tokens', 'visual', 'visual.merger.mlp.0', 'visual.merger.mlp.2']" \
     --lora_rank 256 \
-    --lora_alpha 512 \
+    --lora_alpha 256 \
     --lora_dropout 0.05 \
     --num_lora_modules -1 \
     --deepspeed scripts/zero3_offload.json \
@@ -36,7 +36,7 @@ deepspeed src/train/train_sft.py \
     --fp16 False \
     --disable_flash_attn2 False \
     --output_dir output/testing_lora \
-    --num_train_epochs 5 \
+    --num_train_epochs 1 \
     --per_device_train_batch_size $BATCH_PER_DEVICE \
     --gradient_accumulation_steps $GRAD_ACCUM_STEPS \
     --image_min_pixels $((256 * 28 * 28)) \
