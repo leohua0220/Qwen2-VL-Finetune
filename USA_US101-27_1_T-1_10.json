@@ -1,0 +1,227 @@
+{
+    "ego_vehicle": {
+        "id": 352,
+        "current_state": {
+            "timestamp_s": 1.0,
+            "position_xy": [
+                0.0,
+                0.0
+            ],
+            "velocity_mps": 15.23,
+            "acceleration_mps2": 0.24,
+            "heading_radian": 0.0
+        },
+        "historical_trajectory": [
+            {
+                "timestamp_s": 0.5,
+                "position_xy": [
+                    -7.48,
+                    0.06
+                ],
+                "velocity_mps": 14.59,
+                "acceleration_mps2": 0.87,
+                "heading_radian": -0.03
+            },
+            {
+                "timestamp_s": 0.6,
+                "position_xy": [
+                    -6.01,
+                    0.04
+                ],
+                "velocity_mps": 14.75,
+                "acceleration_mps2": 0.77,
+                "heading_radian": -0.02
+            },
+            {
+                "timestamp_s": 0.7,
+                "position_xy": [
+                    -4.52,
+                    0.02
+                ],
+                "velocity_mps": 14.9,
+                "acceleration_mps2": 0.67,
+                "heading_radian": -0.01
+            },
+            {
+                "timestamp_s": 0.8,
+                "position_xy": [
+                    -3.02,
+                    0.02
+                ],
+                "velocity_mps": 15.02,
+                "acceleration_mps2": 0.59,
+                "heading_radian": -0.01
+            },
+            {
+                "timestamp_s": 0.9,
+                "position_xy": [
+                    -1.52,
+                    0.01
+                ],
+                "velocity_mps": 15.14,
+                "acceleration_mps2": 0.53,
+                "heading_radian": -0.01
+            }
+        ]
+    },
+    "dynamic_obstacles": [
+        {
+            "id": 357,
+            "class": "vehicle",
+            "current_state": {
+                "timestamp_s": 1.0,
+                "position_xy": [
+                    -10.02,
+                    3.11
+                ],
+                "velocity_mps": 13.72,
+                "acceleration_mps2": 0.0,
+                "heading_radian": -0.01
+            }
+        },
+        {
+            "id": 356,
+            "class": "vehicle",
+            "current_state": {
+                "timestamp_s": 1.0,
+                "position_xy": [
+                    -9.18,
+                    5.82
+                ],
+                "velocity_mps": 13.61,
+                "acceleration_mps2": -1.22,
+                "heading_radian": -0.01
+            }
+        },
+        {
+            "id": 365,
+            "class": "vehicle",
+            "current_state": {
+                "timestamp_s": 1.0,
+                "position_xy": [
+                    -10.98,
+                    9.83
+                ],
+                "velocity_mps": 10.78,
+                "acceleration_mps2": -1.29,
+                "heading_radian": -0.01
+            }
+        },
+        {
+            "id": 350,
+            "class": "vehicle",
+            "current_state": {
+                "timestamp_s": 1.0,
+                "position_xy": [
+                    14.51,
+                    2.6
+                ],
+                "velocity_mps": 15.24,
+                "acceleration_mps2": 0.0,
+                "heading_radian": -0.01
+            }
+        },
+        {
+            "id": 397,
+            "class": "vehicle",
+            "current_state": {
+                "timestamp_s": 1.0,
+                "position_xy": [
+                    5.1,
+                    15.92
+                ],
+                "velocity_mps": 3.05,
+                "acceleration_mps2": 0.0,
+                "heading_radian": -0.01
+            }
+        },
+        {
+            "id": 404,
+            "class": "vehicle",
+            "current_state": {
+                "timestamp_s": 1.0,
+                "position_xy": [
+                    -5.07,
+                    16.6
+                ],
+                "velocity_mps": 4.06,
+                "acceleration_mps2": 2.51,
+                "heading_radian": -0.02
+            }
+        },
+        {
+            "id": 351,
+            "class": "vehicle",
+            "current_state": {
+                "timestamp_s": 1.0,
+                "position_xy": [
+                    12.81,
+                    12.61
+                ],
+                "velocity_mps": 9.26,
+                "acceleration_mps2": 1.44,
+                "heading_radian": -0.01
+            }
+        },
+        {
+            "id": 364,
+            "class": "vehicle",
+            "current_state": {
+                "timestamp_s": 1.0,
+                "position_xy": [
+                    -13.79,
+                    12.83
+                ],
+                "velocity_mps": 11.15,
+                "acceleration_mps2": -0.51,
+                "heading_radian": -0.01
+            }
+        },
+        {
+            "id": 417,
+            "class": "vehicle",
+            "current_state": {
+                "timestamp_s": 1.0,
+                "position_xy": [
+                    -14.87,
+                    16.36
+                ],
+                "velocity_mps": 3.05,
+                "acceleration_mps2": 0.0,
+                "heading_radian": -0.01
+            }
+        },
+        {
+            "id": 396,
+            "class": "vehicle",
+            "current_state": {
+                "timestamp_s": 1.0,
+                "position_xy": [
+                    17.44,
+                    15.67
+                ],
+                "velocity_mps": 3.05,
+                "acceleration_mps2": 0.0,
+                "heading_radian": -0.01
+            }
+        }
+    ],
+    "goal_region": {
+        "center_xy": [
+            102.94,
+            1.19
+        ],
+        "velocity_interval": [
+            12.25,
+            18.25
+        ],
+        "time_interval_s": [
+            7.0,
+            8.0
+        ],
+        "orientation_interval": [
+            -0.12,
+            0.06
+        ]
+    }
+}
